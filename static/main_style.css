@@ -1,19 +1,36 @@
 body {
     background-color: #FEFBF6;
 }
-ul {
-    list-style-type: none;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #f3f3f3;
-    border: 1px solid #1758f1;
-    font-family:Oxygen,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
+.topnav {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  overflow: hidden;
+  background-color: #f3f3f3;
+}
+.topnav a{
+  float:left;
+  color: #404258;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+  font-family:Oxygen,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+} 
+
+.topnav a:hover {
+  background-color:#2192FF;
+  color:white;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color:white;
+}
+
+.topnav-right {
+  float:right
+}
 li {
   float: left;
 }
@@ -27,13 +44,13 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+li a:hover:not(.active) {
   background-color: #2192FF;
   color: #fff;
 
 
 }
-li a.active {
+.active {
   background-color: #04AA6D;
 }
 
