@@ -1,2 +1,4 @@
 .DS_Store
-powertrack_env
+/powertrack_env
+/power_track_app/__pycache__
+/power_track_project/__pycache__
