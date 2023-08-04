@@ -1,3 +1,4 @@
-/powertrack_env
-/power_track_app/__pycache__
-/power_track_project/__pycache__
+power_track_app/__pycache__
+powertrack_env
+power_track_project/__pycache__
+power_track_app/migrations/__pycache__
