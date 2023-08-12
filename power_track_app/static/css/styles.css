@@ -18,6 +18,9 @@ body {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
+    /* Set the desired height */
+    height: 40px;
 }
 
 /* Style the menu toggle button */
@@ -56,8 +59,6 @@ body {
     color: #ff9900;
 }
 
-/* ... (previous code) ... */
-
 /* Style the authentication buttons */
 .auth-buttons {
     display: flex;
@@ -78,8 +79,90 @@ body {
     background-color: #e68000;
 }
 
-/* ... (media query and other styles) ... */
+/* ... (previous code) ... */
 
+/* Style the call-to-action section */
+.cta-section {
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 60px 0; /* Increased padding for more space */
+    text-align: center;
+}
+
+/* Container for image and text */
+.cta-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the image */
+.cta-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.cta-image img {
+    max-width: 100%;
+}
+
+/* Style for the text content */
+.cta-text {
+    flex: 2;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center; /* Center text horizontally */
+}
+
+/* Style for the main text */
+.main-text {
+    font-size: 32px; /* Larger font size */
+    margin-bottom: 20px; /* Padding below the main text */
+}
+
+/* Style for the sub-text */
+.sub-text {
+    font-size: 18px; /* Larger font size */
+    margin-bottom: 20px; /* Padding below the sub-text */
+}
+
+/* ... (remaining styles) ... */
+
+
+.cta-button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e68000;
+}
+
+
+/* Style the logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 18px;
+    color: white;
+}
 
 /* Media query for mobile */
 @media screen and (max-width: 768px) {
@@ -101,23 +184,3 @@ body {
         left: 0;
     }
 }
-
-/* ... (previous code) ... */
-
-/* Style the logo */
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    max-width: 40px; /* Set your logo's maximum width */
-    margin-right: 10px;
-}
-
-.logo h1 {
-    font-size: 18px; /* Adjust the font size as needed */
-    color: white;
-}
-
-/* ... (media query and other styles) ... */

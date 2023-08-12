@@ -1,39 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Set character encoding and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Include external stylesheets and fonts -->
     <link rel="stylesheet" href="static/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Set the title of the page -->
     <title>Your Website</title>
 </head>
 <body>
-  <header class="menu-bar">
-      <div class="menu-toggle">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+    <!-- Header with menu bar -->
+    <header class="menu-bar">
+        <!-- Menu toggle button -->
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- Logo and website name -->
+        <div class="logo">
+            <img src="https://fakeimg.pl/100x100/78ff6e/008562?text=PT" alt="Your Logo">
+            <h1>Your Website Name</h1>
+        </div>
+        <!-- Navigation links -->
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Authentication buttons -->
+        <div class="auth-buttons">
+            <button class="auth-button">Sign Up</button>
+            <button class="auth-button">Login</button>
+        </div>
+    </header>
+    <!-- ... (previous code) ... -->
+
+<main>
+  <!-- Your main content goes here -->
+
+  <!-- Call-to-action section -->
+  <section class="cta-section">
+      <!-- Container for image and text -->
+      <div class="cta-content">
+          <!-- Image on the left -->
+          <div class="cta-image">
+              <img src="https://fakeimg.pl/600x400/0084ff/fafafa?text=Energy+Efficiency" alt="Left Image">
+          </div>
+          <!-- Text content in the middle -->
+          <div class="cta-text">
+              <h2 class="main-text">Manage. Save. Empower.</h2>
+              <p class="sub-text">Power Track unlocks hidden energy efficiency gains and savings by managing where your energy goes.</p>
+              <button class="cta-button">Sign Up Now</button>
+          </div>
+          <!-- Image on the right -->
+          <div class="cta-image">
+              <img src="https://fakeimg.pl/600x400/0084ff/fafafa?text=Energy+Efficiency" alt="Right Image">
+          </div>
       </div>
-      <div class="logo">
-          <img src="https://fakeimg.pl/100x100/78ff6e/008562?text=PT" alt="Your Logo">
-          <h1>Your Website Name</h1>
-      </div>
-      <nav class="menu-nav">
-          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-      </nav>
-      <div class="auth-buttons">
-          <button class="auth-button">Sign Up</button>
-          <button class="auth-button">Login</button>
-      </div>
-  </header>
-  <main>
-      <!-- Your main content goes here -->
-  </main>
-  <script src="static/js/script.js"></script>
+  </section>
+</main>
+
+<!-- ... (remaining code) ... -->
+
+    <!-- Include external JavaScript -->
+    <script src="static/js/script.js"></script>
 </body>
 </html>
-
