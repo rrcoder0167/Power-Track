@@ -184,3 +184,41 @@ body {
         left: 0;
     }
 }
+
+/* Style for the authentication section */
+.auth-section {
+    background-color: #f0f0f0;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Style for the authentication content */
+.auth-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the authentication form */
+.auth-form {
+    text-align: left;
+}
+
+/* Style for the authentication title */
+.auth-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style for the authentication input fields */
+.auth-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
