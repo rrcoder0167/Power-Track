@@ -1,68 +1,185 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styling */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-  }
-  
-  .navbar {
-    background-color: #f7f7f7;
-    padding: 10px 20px;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .navbar nav {
+}
+
+/* Load Poppins font */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* Style the menu bar */
+.menu-bar {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
     display: flex;
-    justify-content: center;
-  }
-  
-  .navbar ul {
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
+    /* Set the desired height */
+    height: 40px;
+}
+
+/* Style the menu toggle button */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: transform 0.3s ease;
+}
+
+/* Style the navigation links */
+.menu-nav ul {
     list-style: none;
-  }
-  
-  .navbar li {
-    margin: 0 10px;
-  }
-  
-  .navbar a {
+    display: flex;
+}
+
+.menu-nav ul li {
+    margin: 0 15px;
+}
+
+.menu-nav ul li a {
     text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu-nav ul li a:hover {
+    color: #ff9900;
+}
+
+/* Style the authentication buttons */
+.auth-buttons {
+    display: flex;
+}
+
+.auth-button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
     border-radius: 5px;
-    transition: background-color 0.2s ease;
-  }
-  
-  .navbar a:hover {
-    background-color: #ddd;
-  }
-  
-  .hero-section {
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+    background-color: #e68000;
+}
+
+/* ... (previous code) ... */
+
+/* Style the call-to-action section */
+.cta-section {
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 60px 0; /* Increased padding for more space */
     text-align: center;
-    padding: 100px 0;
-  }
-  
-  .hero-section h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .hero-section p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 40px;
-  }
-  
-  .rounded-button {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
+}
+
+/* Container for image and text */
+.cta-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the image */
+.cta-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.cta-image img {
+    max-width: 100%;
+}
+
+/* Style for the text content */
+.cta-text {
+    flex: 2;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center; /* Center text horizontally */
+}
+
+/* Style for the main text */
+.main-text {
+    font-size: 32px; /* Larger font size */
+    margin-bottom: 20px; /* Padding below the main text */
+}
+
+/* Style for the sub-text */
+.sub-text {
+    font-size: 18px; /* Larger font size */
+    margin-bottom: 20px; /* Padding below the sub-text */
+}
+
+/* ... (remaining styles) ... */
+
+
+.cta-button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
     padding: 10px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: background-color 0.2s ease;
-  }
-  
-  .rounded-button:hover {
-    background-color: #0056b3;
-  }
-  
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e68000;
+}
+
+
+/* Style the logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 18px;
+    color: white;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-nav {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background-color: #333;
+        border-radius: 0 0 10px 10px;
+        transition: left 0.3s ease;
+    }
+
+    .menu-nav.active {
+        left: 0;
+    }
+}

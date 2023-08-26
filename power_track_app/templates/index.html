@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Landing Page</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-  }
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
-  .header {
-    background-color: #3498db;
-    color: #ffffff;
-    padding: 10px;
-  }
-  .hero-text {
-    font-size: 36px;
-    margin-top: 50px;
-  }
-  .subtext {
-    font-size: 18px;
-    margin-top: 20px;
-    color: #777;
-  }
-  .cta-button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 10px 20px;
-    background-color: #e74c3c;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-</style>
+    <!-- Set character encoding and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Include external stylesheets and fonts -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Set the title of the page -->
+    <title>Your Website</title>
 </head>
 <body>
-  <div class="header">
-    <div class="container">
-      <h1>Your Brand</h1>
-    </div>
-  </div>
-  <div class="container">
-    <h2 class="hero-text">Welcome to Our Awesome Landing Page</h2>
-    <p class="subtext">Discover the amazing features of our product.</p>
-    <a href="#" class="cta-button">Get Started</a>
-  </div>
+    <!-- Header with menu bar -->
+    <header class="menu-bar">
+        <!-- Menu toggle button -->
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <!-- Logo and website name -->
+        <div class="logo">
+            <img src="https://fakeimg.pl/100x100/78ff6e/008562?text=PT" alt="Your Logo">
+            <h1>Your Website Name</h1>
+        </div>
+        <!-- Navigation links -->
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Authentication buttons -->
+        <div class="auth-buttons">
+            <button class="auth-button">Sign Up</button>
+            <button class="auth-button">Login</button>
+        </div>
+    </header>
+    <!-- ... (previous code) ... -->
+
+<main>
+  <!-- Your main content goes here -->
+
+  <!-- Call-to-action section -->
+  <section class="cta-section">
+      <!-- Container for image and text -->
+      <div class="cta-content">
+          <!-- Image on the left -->
+          <div class="cta-image">
+              <img src="https://fakeimg.pl/600x400/0084ff/fafafa?text=Energy+Efficiency" alt="Left Image">
+          </div>
+          <!-- Text content in the middle -->
+          <div class="cta-text">
+              <h2 class="main-text">Manage. Save. Empower.</h2>
+              <p class="sub-text">Power Track unlocks hidden energy efficiency gains and savings by managing where your energy goes.</p>
+              <button class="cta-button">Sign Up Now</button>
+          </div>
+          <!-- Image on the right -->
+          <div class="cta-image">
+              <img src="https://fakeimg.pl/600x400/0084ff/fafafa?text=Energy+Efficiency" alt="Right Image">
+          </div>
+      </div>
+  </section>
+</main>
+
+<!-- ... (remaining code) ... -->
+
+    <!-- Include external JavaScript -->
+    <script src="static/js/script.js"></script>
 </body>
 </html>
