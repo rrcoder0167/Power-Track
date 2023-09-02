@@ -61,22 +61,13 @@ body {
 /* Style the authentication buttons */
 .auth-buttons {
     display: flex;
-}
-
-.auth-button {
-    background-color: #ff9900;
-    color: white;
-    border: none;
+    color: #ff8400;
+    text-decoration: none;
+    padding: 10px 20px;
     border-radius: 5px;
-    padding: 8px 15px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 18px;
 }
 
-.auth-button:hover {
-    background-color: #e68000;
-}
 
 /* ... (previous code) ... */
 
