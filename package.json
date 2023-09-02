@@ -1,0 +1,17 @@
+{
+    "name": "power-track",
+    "version": "0.1",
+    "description": "Power Track",
+    "main": "manage.py",
+    "scripts": {
+      "start": "export PORT=3000 && python3 manage.py runserver",
+      "test": "python3 manage.py test"
+    },
+    "author": "Riddhiman Rana",
+    "license": "nobody asked",
+    "dependencies": {
+      "django": "^4.2.4",
+      "sqlparse": "^0.4.4",
+      "asgiref": "^3.7.2"
+    }
+  }
